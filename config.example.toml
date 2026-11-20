@@ -1,0 +1,96 @@
+# Copy to config.toml and keep that file private. Start with an isolated test device.
+# Empty lists grant no exceptions. Leave optional integrations off until configured.
+
+[proxy]
+listen_port = 8118
+listen_host = "127.0.0.1"
+
+[admin]
+bind = "127.0.0.1"
+port = 8117
+allowed_devices = [] # Add approved client IPs only when remote administration is needed.
+
+[pac]
+port = 8119
+listen_host = "127.0.0.1"
+
+[vision]
+level = "modest"
+block_female_faces = true
+on_busy = "hide" # Hide unreviewed images if the reviewer is busy or unavailable.
+
+[policy]
+block_video_untrusted = true
+text_block_score = 6
+
+[passthrough]
+# A passthrough host bypasses inspection. Add only reviewed, narrowly scoped hosts.
+hosts = []
+inspect_hosts = []
+
+[dns]
+port = 53
+listen_host = "127.0.0.1"
+listen_host_ipv6 = "::1" # Use "" to disable IPv6.
+upstreams = ["1.1.1.3", "1.0.0.3"] # Cloudflare's public family-filtering resolvers.
+policy_exempt = []
+
+[youtube]
+modesty_mode = "strict"
+# No capture, automatic AI approval, prefetch, or unapproved music by default.
+capture_until = 0
+music_without_approval = false
+ai_check = false
+prefetch = false
+
+[x]
+enabled = false
+
+[schedule]
+night_allow = []
+night_except = []
+work_block = []
+
+[schedule.night]
+enabled = false
+
+[schedule.work]
+enabled = false
+exempt_devices = []
+
+[focus]
+enabled = false
+always_allow = []
+
+[focus.topics]
+# Define your own named topic and list of reviewed domains if you enable focus mode.
+
+[mdm]
+backend = "none"
+device_ids = [] # With a configured backend, use its numeric device identifiers.
+
+[sites]
+ai_judge = false
+
+[apps]
+ai_judge = false
+
+[committee]
+# An empty key disables remote approvals. Use the approval bridge's public key here.
+bridge_decision_key = ""
+owner_telegram_id = 0
+
+[telegram_media]
+enabled = false
+bind = "127.0.0.1"
+port = 8120
+
+[mcp]
+enabled = false
+bind = "127.0.0.1"
+port = 8130
+
+[appapi]
+port = 8140
+owners = []
+tailscale = "" # Optional path to the Tailscale CLI. An empty owners list disables the API.

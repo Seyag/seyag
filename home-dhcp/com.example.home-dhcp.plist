@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>Label</key><string>com.example.home-dhcp</string>
+<key>ProgramArguments</key><array><string>/opt/homebrew/sbin/dnsmasq</string><string>--keep-in-foreground</string><string>-C</string><string>__INSTALL_ROOT__/home-dhcp/dnsmasq.conf</string></array>
+<key>KeepAlive</key><true/><key>RunAtLoad</key><true/>
+<key>StandardErrorPath</key><string>/var/log/home-dhcp.log</string>
+</dict></plist>

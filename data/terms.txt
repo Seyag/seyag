@@ -1,0 +1,6 @@
+# Starter terms for the text review layer: one term and integer weight per line.
+# Review and expand this list for your deployment. This is only a starter signal.
+porn 4
+pornography 4
+xxx 3
+nude 3

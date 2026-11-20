@@ -1,0 +1,34 @@
+.venv
+data/*.db*
+__pycache__/
+.pytest_cache/
+data/*.log
+data/*.stamp
+pac/*.log
+data/recent-hosts.log*
+
+# Health watchdog state is local runtime data, not source.
+data/healthcheck.json
+data/healthcheck.lock
+data/probe.token
+data/telegram-media-token.txt
+
+# App request history and install window (scripts/app_request.py).
+data/app-requests.json
+
+# ManageEngine MDM state: the filter-owned profile id and blocked app groups (aifilter/mdm.py).
+data/mdm-state.json
+data/mdm-state.tmp
+data/yt-music-samples/
+
+# Per-device MDM state write locks and management-watch incident state.
+data/app-requests.json.lock
+data/mdm-state.json.lock
+data/mdm-watch.json
+data/mdm-watch.json.lock
+data/focus-blocks-active.json
+data/yt-prefetch-budget.json
+data/yt-prefetch-budget.tmp
+
+# Local deployment configuration.
+config.toml

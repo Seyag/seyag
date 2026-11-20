@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>Label</key><string>com.example.home-v6guard</string>
+<key>ProgramArguments</key><array><string>/usr/bin/python3</string><string>__INSTALL_ROOT__/home-dhcp/v6guard.py</string><string>--iface</string><string>en1</string></array>
+<key>KeepAlive</key><true/><key>RunAtLoad</key><true/>
+<key>StandardOutPath</key><string>/var/log/home-v6guard.log</string>
+<key>StandardErrorPath</key><string>/var/log/home-v6guard.log</string>
+</dict></plist>

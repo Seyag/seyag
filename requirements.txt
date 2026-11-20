@@ -1,0 +1,2 @@
+mcp>=1.9,<2  # FastMCP API; 2.x renamed it
+uvicorn>=0.30,<1

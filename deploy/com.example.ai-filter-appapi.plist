@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>Label</key><string>com.example.ai-filter-appapi</string>
+  <!-- Owner's native committee app API. Binds 127.0.0.1 only. Publish it first, tailnet only, never Funnel,
+       with the exact Serve command in README.md (section "Committee app API"); the server refuses to start
+       unless that is the only Serve route to it. -->
+  <key>ProgramArguments</key><array>
+    <string>__INSTALL_ROOT__/.venv/bin/python</string>
+    <string>-m</string><string>aifilter.appapi</string>
+  </array>
+  <!-- launchd starts with an almost empty PATH; the server also calls tailscale by absolute path. -->
+  <key>EnvironmentVariables</key><dict>
+    <key>PATH</key><string>/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+  </dict>
+  <key>WorkingDirectory</key><string>__INSTALL_ROOT__</string>
+  <key>RunAtLoad</key><true/>
+  <!-- Restart only after a crash: with an empty [appapi] owners list the server exits 0 and stays down. -->
+  <key>KeepAlive</key><dict><key>SuccessfulExit</key><false/></dict>
+  <key>StandardOutPath</key><string>__INSTALL_ROOT__/data/appapi.log</string>
+  <key>StandardErrorPath</key><string>__INSTALL_ROOT__/data/appapi.log</string>
+</dict></plist>

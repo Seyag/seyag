@@ -1,0 +1,105 @@
+{
+ "source": "format table (itag + mimeType only) of a real iOS YouTube Music SABR player answer, 2026-11-16; URLs, IPs and signatures removed",
+ "formats": [
+  {
+   "itag": 137,
+   "mime": "video/mp4; codecs=\"avc1.640020\""
+  },
+  {
+   "itag": 248,
+   "mime": "video/webm; codecs=\"vp9\""
+  },
+  {
+   "itag": 399,
+   "mime": "video/mp4; codecs=\"av01.0.08M.08\""
+  },
+  {
+   "itag": 136,
+   "mime": "video/mp4; codecs=\"avc1.4D401F\""
+  },
+  {
+   "itag": 247,
+   "mime": "video/webm; codecs=\"vp9\""
+  },
+  {
+   "itag": 398,
+   "mime": "video/mp4; codecs=\"av01.0.04M.08\""
+  },
+  {
+   "itag": 135,
+   "mime": "video/mp4; codecs=\"avc1.4D401E\""
+  },
+  {
+   "itag": 244,
+   "mime": "video/webm; codecs=\"vp9\""
+  },
+  {
+   "itag": 397,
+   "mime": "video/mp4; codecs=\"av01.0.01M.08\""
+  },
+  {
+   "itag": 134,
+   "mime": "video/mp4; codecs=\"avc1.4D4015\""
+  },
+  {
+   "itag": 243,
+   "mime": "video/webm; codecs=\"vp9\""
+  },
+  {
+   "itag": 396,
+   "mime": "video/mp4; codecs=\"av01.0.00M.08\""
+  },
+  {
+   "itag": 133,
+   "mime": "video/mp4; codecs=\"avc1.4D400C\""
+  },
+  {
+   "itag": 242,
+   "mime": "video/webm; codecs=\"vp9\""
+  },
+  {
+   "itag": 395,
+   "mime": "video/mp4; codecs=\"av01.0.00M.08\""
+  },
+  {
+   "itag": 160,
+   "mime": "video/mp4; codecs=\"avc1.4D400B\""
+  },
+  {
+   "itag": 278,
+   "mime": "video/webm; codecs=\"vp9\""
+  },
+  {
+   "itag": 394,
+   "mime": "video/mp4; codecs=\"av01.0.00M.08\""
+  },
+  {
+   "itag": 139,
+   "mime": "audio/mp4; codecs=\"mp4a.40.5\""
+  },
+  {
+   "itag": 140,
+   "mime": "audio/mp4; codecs=\"mp4a.40.2\""
+  },
+  {
+   "itag": 141,
+   "mime": "audio/mp4; codecs=\"mp4a.40.2\""
+  },
+  {
+   "itag": 249,
+   "mime": "audio/webm; codecs=\"opus\""
+  },
+  {
+   "itag": 250,
+   "mime": "audio/webm; codecs=\"opus\""
+  },
+  {
+   "itag": 251,
+   "mime": "audio/webm; codecs=\"opus\""
+  },
+  {
+   "itag": 774,
+   "mime": "audio/webm; codecs=\"opus\""
+  }
+ ]
+}

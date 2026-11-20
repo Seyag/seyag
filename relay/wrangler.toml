@@ -1,0 +1,24 @@
+name = "ai-filter-relay"
+main = "src/index.ts"
+compatibility_date = "2025-10-01"
+
+[[kv_namespaces]]
+binding = "RELAY"
+id = "00000000000000000000000000000002"
+preview_id = "00000000000000000000000000000003"
+
+[[durable_objects.bindings]]
+name = "AUTH"
+class_name = "RelayCoordinator"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["RelayCoordinator"]
+
+[vars]
+# Replace with the exact redirect URI(s) shown by the ChatGPT connector setup.
+CHATGPT_REDIRECT_URIS = '["https://chatgpt.com/connector/oauth/<callback_id>"]'
+MAX_CLIENT_REGISTRATIONS = "100"
+
+# Set secrets with `wrangler secret put`: OWNER_EMAIL, GOOGLE_CLIENT_ID,
+# GOOGLE_CLIENT_SECRET, HOME_TOKEN. No credentials belong in this file.
